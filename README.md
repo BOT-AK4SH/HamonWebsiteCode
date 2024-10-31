@@ -1,2 +1,2 @@
 # HamonWebsiteCode
-Hamon Streaming App Sample
+Demo website made for the Hamon app.
