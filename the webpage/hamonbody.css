@@ -1,0 +1,141 @@
+/* General Styling */
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #000;
+}
+
+/* Content-Video Wrapper */
+.content-video-wrapper {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Left Side Content */
+.content-section {
+    flex: 1;
+    padding: 60px;
+    background: linear-gradient(to right, #131313b0 70%, transparent); /* Smooth blend */
+    color: #fcf9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-section h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.content-section p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 190px;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Right Side Video with Download Button */
+.video-section {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100vh; /* Make the video fill the full height */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    filter: brightness(0.7); /* Optional darkening */
+}
+
+/* Content Wrapper for side-by-side layout */
+.content-wrapper {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px; /* Space between sections */
+    padding: 20px;
+    margin-top: 380px;
+    margin-left: 20px;
+}
+
+/* Features and About sections */
+#features {
+    flex: 1; /* Both sections take equal space */
+    padding: 60px;
+    background: #04367859;
+    color: #fcf9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(70, 102, 163, 0.914);
+    max-width:250px;
+    height: 270px;
+}
+#about {
+    flex: 1; /* Both sections take equal space */
+    padding: 60px;
+    background: #04367859;
+    color: #fcf9f9;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(70, 102, 163, 0.914);
+    max-width:250px;
+    height: 270px;
+
+}
+
+
+/* Sign In Button (Fixed in Top-Right) */
+.sign-in-button {
+    position: absolute;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: #034485;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    z-index: 2; /* Stay above the video */
+}
+
+/* Android Download Button (Under Welcome Header) */
+.android-button {
+    margin-top: 50px;
+    padding: 15px 30px;
+    background: #de012c; /* Android Green */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    width: fit-content;
+    display: flex; /* Ensures the image and text are aligned horizontally */
+    align-items: center; /* Vertically centers the content inside the button */
+    gap: 10px; /* Adds space between the image and text */
+}
+
+.download-logo {
+    width: 24px;
+    height: 24px;
+}
+/* Footer Styling */
+footer {
+    margin-top: 120px;
+    background-color: hsl(0, 2%, 12%);
+    height: 40px;
+    text-align:center;
+    padding: 15px;
+}
